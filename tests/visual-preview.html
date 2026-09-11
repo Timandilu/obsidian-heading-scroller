@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Heading Scroller visual check</title>
+        <link rel="stylesheet" href="../styles.css" />
+        <style>
+            :root {
+                --background-primary: #fbfaf8;
+                --background-modifier-border: #dedbd5;
+                --background-modifier-hover: #f0ede7;
+                --text-normal: #292825;
+                --text-muted: #77736d;
+                --font-interface: "Segoe UI", sans-serif;
+                --font-text: Georgia, serif;
+                --radius-s: 4px;
+            }
+
+            body {
+                background: #f4f1ec;
+                margin: 0;
+            }
+
+            button {
+                background: #f6f6f6;
+                border: 1px solid #cfcfcf;
+                box-shadow: 0 1px 2px rgb(0 0 0 / 0.12);
+                min-height: 32px;
+                padding: 5px 12px;
+            }
+
+            .heading-scroller-host {
+                background: var(--background-primary);
+                box-shadow: 0 1px 20px rgb(40 35 25 / 0.08);
+                height: 720px;
+                margin: 36px auto;
+                overflow: hidden;
+                width: 720px;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="heading-scroller-host">
+            <div class="heading-scroller heading-scroller--left">
+                <div class="heading-scroller__panel" role="navigation">
+                    <div class="heading-scroller__eyebrow">INHALTE</div>
+                    <div class="heading-scroller__outline">
+                        <button class="heading-scroller__link heading-scroller__link--depth-0">A “cottage” no more</button>
+                        <button class="heading-scroller__link heading-scroller__link--depth-1">Power Law is now the shape of outcomes</button>
+                        <button class="heading-scroller__link heading-scroller__link--depth-1 is-active">When venture eats the world</button>
+                        <button class="heading-scroller__link heading-scroller__link--depth-2">Machine intelligence compounds</button>
+                        <button class="heading-scroller__link heading-scroller__link--depth-1">The legitimate case against venture</button>
+                        <button class="heading-scroller__link heading-scroller__link--depth-2">Show me the money</button>
+                        <button class="heading-scroller__link heading-scroller__link--depth-2">Returns over marks</button>
+                        <button class="heading-scroller__link heading-scroller__link--depth-1">Proximity is not participation</button>
+                        <button class="heading-scroller__link heading-scroller__link--depth-1">Ripping it to studs and starting over</button>
+                    </div>
+                </div>
+                <div class="heading-scroller__rail" role="navigation">
+                    <button class="heading-scroller__marker heading-scroller__marker--level-1"><span class="heading-scroller__tick"></span></button>
+                    <button class="heading-scroller__marker heading-scroller__marker--level-2"><span class="heading-scroller__tick"></span></button>
+                    <button class="heading-scroller__marker heading-scroller__marker--level-2 is-active"><span class="heading-scroller__tick"></span></button>
+                    <button class="heading-scroller__marker heading-scroller__marker--level-3"><span class="heading-scroller__tick"></span></button>
+                    <button class="heading-scroller__marker heading-scroller__marker--level-2"><span class="heading-scroller__tick"></span></button>
+                    <button class="heading-scroller__marker heading-scroller__marker--level-3"><span class="heading-scroller__tick"></span></button>
+                    <button class="heading-scroller__marker heading-scroller__marker--level-3"><span class="heading-scroller__tick"></span></button>
+                    <button class="heading-scroller__marker heading-scroller__marker--level-2"><span class="heading-scroller__tick"></span></button>
+                    <button class="heading-scroller__marker heading-scroller__marker--level-2"><span class="heading-scroller__tick"></span></button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

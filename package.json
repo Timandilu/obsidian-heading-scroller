@@ -1,0 +1,32 @@
+{
+  "name": "obsidian-heading-scroller",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A refined heading scroller for Obsidian.",
+  "author": "Timon Wendland",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timandilu/obsidian-heading-scroller.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Timandilu/obsidian-heading-scroller/issues"
+  },
+  "homepage": "https://github.com/Timandilu/obsidian-heading-scroller#readme",
+  "scripts": {
+    "build": "tsc --noEmit && node esbuild.config.mjs",
+    "format": "prettier --write src tests styles.css *.json *.md *.mjs",
+    "format:check": "prettier --check src tests styles.css *.json *.md *.mjs",
+    "test": "vitest run",
+    "check": "pnpm format:check && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "esbuild": "^0.28.0",
+    "obsidian": "^1.13.0",
+    "prettier": "^3.8.0",
+    "typescript": "~5.9.0",
+    "vitest": "^3.2.0"
+  },
+  "packageManager": "pnpm@11.19.0"
+}

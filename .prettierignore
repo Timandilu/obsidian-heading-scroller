@@ -1,0 +1,4 @@
+node_modules/
+main.js
+pnpm-lock.yaml
+tests/visual-preview.html

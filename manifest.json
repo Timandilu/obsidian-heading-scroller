@@ -1,0 +1,10 @@
+{
+  "id": "heading-scroller",
+  "name": "Heading Scroller",
+  "version": "1.0.0",
+  "minAppVersion": "1.6.0",
+  "description": "A quiet heading rail that expands into an elegant outline on hover.",
+  "author": "Timon Wendland",
+  "authorUrl": "https://github.com/Timandilu",
+  "isDesktopOnly": false
+}

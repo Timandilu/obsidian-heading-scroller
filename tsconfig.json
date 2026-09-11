@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2018",
+    "strict": true,
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "types": ["node", "vitest/globals"],
+    "lib": ["DOM", "DOM.Iterable", "ES2021"],
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts"]
+}
